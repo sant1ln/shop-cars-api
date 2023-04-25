@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from routers.clients import client_router
+from routers.cars import cars_router
 
 #Init 
 app = FastAPI()
@@ -9,6 +10,7 @@ app.version = "0.0.1"
 
 #Routes
 app.include_router(client_router)
+app.include_router(cars_router)
 
 @app.get('/', tags=['Home'])
 def home_test():

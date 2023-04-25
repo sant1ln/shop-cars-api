@@ -1,4 +1,5 @@
-clients = [{
+clients = [
+    {
   "id": 1,
   "first_name": "Taddeusz",
   "last_name": "Davie",
